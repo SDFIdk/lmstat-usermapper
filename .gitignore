@@ -2,3 +2,4 @@ lmstat-userlist.txt
 *.txt
 *.pyc
 !lmstat-output-whats-what.txt
+lmutil.exe
