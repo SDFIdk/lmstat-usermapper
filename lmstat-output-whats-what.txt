@@ -1,0 +1,18 @@
+A list of the license types in the lmstat output file, and what they correspond to.
+If you're looking for anything, please add it to the list after you've found the answer.
+
+
+Under Customize -> Extensions:
+Foundation      = Production Mapping
+Grid            = Spatial Analyst
+Network Analyst = Network
+Nautical        = Maritime Charting
+
+
+In ArcGIS Administrator:
+ARC/INFO        = Advanced (ArcInfo)
+Editor          = Standard (ArcEditor)
+Viewer          = Basic (ArcView)
+
+
+JTX is something used by SWIM.
