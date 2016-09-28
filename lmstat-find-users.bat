@@ -6,7 +6,7 @@
 @rem --- USER VARIABLES ---
 
 @rem License server
-set LICSERVER=127.0.0.1
+set LICSERVER=10.34.129.186
 
 @rem License type to get email addresses for
 set LICTYPE="ARC/INFO"
@@ -26,10 +26,10 @@ cd %~dp0
 
 @rem TODO: Check existence of user file and warn if not found
 
-call lmutil lmstat -a -c @%LICSERVER% > "./%LICOUTPUT%"
-call python.exe lmstat-users.py %LICTYPE% "%LICOUTPUT%" "%USERLIST%" > "./%USEROUTPUT%"
-start %LICOUTPUT%
-start %USEROUTPUT%
+call lmutil lmstat -a -c @%LICSERVER% > "%TMP%\%LICOUTPUT%"
+call python.exe lmstat-users.py %LICTYPE% "%TMP%\%LICOUTPUT%" "%USERLIST%" > "%TMP%\%USEROUTPUT%"
+start %TMP%\%LICOUTPUT%
+start %TMP%\%USEROUTPUT%
 
 @rem Return user to original directory
 cd "%ORIGDIR%"
